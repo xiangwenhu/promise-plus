@@ -1,0 +1,24 @@
+{
+    "name": "promise-plus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "promise",
+        "thenable",
+        "promises"
+    ],
+    "files": [
+        "index.js",
+        "utils.js"
+    ],
+    "author": "xiangwenhu",
+    "license": "MIT",
+    "devDependencies": {
+        "assert": "^1.4.1",
+        "mocha": "^5.2.0"
+    }
+}
