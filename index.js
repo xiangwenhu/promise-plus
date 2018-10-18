@@ -1,4 +1,4 @@
-const { toPromises } = require('./utils')
+const { toPromises, isFunction } = require('./utils')
 
 /**
  * 返回Promise.all
@@ -32,7 +32,7 @@ function sequence(promises = [], cb, ...args) {
     }
     let i = 0
     //如果cb不是函数
-    if (typeof cb !== 'function') {
+    if (!isFunction(cb)) {
         cb = null
         args = [cb, ...args]
     }
