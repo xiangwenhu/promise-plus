@@ -59,6 +59,25 @@ describe('promise-plus', function () {
 
 
     describe('#sequence()', function () {
+
+        it('execute demo', function (done) {
+
+            const promises = [p1, p2, p3]
+
+            sequence(promises, function (r, i, ...args) {
+                console.log('result:' + r, 'index:' + i, 'args:', ...args)
+                return r
+            }, {
+                    a: 1,
+                    b: 2
+                }, 3).then(r => {
+                    printTime('result:', r)
+                    done()
+                })
+
+        })
+
+
         it('middle function add', function (done) {
 
             const promises = [p1, p2]
