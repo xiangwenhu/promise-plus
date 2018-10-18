@@ -1,16 +1,16 @@
-# promise-plus
+# promise-p-plus
 
 enhanced Promise
 
 
 ## Installation
 
-    $ npm install promise-plus --save
+    $ npm install promise-p-plus --save
 
 ## Usage
 
 ```javascript
-var {sequence} = require('promise-plus')
+var {sequence} = require('promise-p-plus')
 
 
 const p1 = function () {

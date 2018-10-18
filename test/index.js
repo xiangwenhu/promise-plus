@@ -35,7 +35,7 @@ function printTime() {
 
 
 
-describe('promise-plus', function () {
+describe('promise-p-plus', function () {
 
     describe('#race()', function () {
         it('should return 1', function (done) {
