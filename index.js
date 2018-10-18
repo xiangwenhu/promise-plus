@@ -40,9 +40,9 @@ function sequence(promises = [], cb, ...args) {
     function execute(...params) {
         return p.then(r => {
             return promises[i](r, ...params)
-        }).then(r => {
+        }).then(async r => {
             ++i
-            cb && cb(r, i, ...params)
+            cb && (r = await cb(r, i, ...params))
             return i > len - 1 ? Promise.resolve(r) : execute(...params)
         })
     }
