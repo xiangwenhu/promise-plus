@@ -1,6 +1,6 @@
 {
     "name": "promise-p-plus",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -15,6 +15,10 @@
         "index.js",
         "utils.js"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xiangwenhu/promise-plus"
+    },
     "author": "xiangwenhu",
     "license": "MIT",
     "devDependencies": {
